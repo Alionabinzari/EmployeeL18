@@ -8,8 +8,8 @@ public class Main {
 
         employeeList.stream()
                 .filter(e -> e.getAge()>25 &&
-                        e.isPayedPerHour() &&
-                        e.getDepartment().equals ("Management"))
+                             e.isPayedPerHour() &&
+                             e.getDepartment().equals ("Management"))
                 .distinct ()
                 .limit(5)
                 .forEach(System.out::println);
